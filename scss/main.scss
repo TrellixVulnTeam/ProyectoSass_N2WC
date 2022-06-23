@@ -1,0 +1,94 @@
+/* Grillas */
+.grilla{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "main main"
+      "footer footer";
+}
+
+.grilla2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "nav"
+    "main2"
+    "footer";
+}
+
+@import './secciones/index.scss';
+@import './secciones/contacto.scss';
+@import './secciones/masinfo.scss';
+@import './secciones/nosotros.scss';
+@import './secciones/novedades.scss';
+
+nav {
+    grid-area: nav;
+}
+
+.navbar {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+footer .lista li {
+    margin: 10px;
+}
+
+footer .lista a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer .lista a:hover {
+    font-weight: 900;
+    color: white;
+    background-color: black;
+}
+  
+html, body , .grilla {
+    height: 100%;
+}
+
+/* Animaciones */
+@keyframes mainAparece {
+    from {
+        transform: translateY(-1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}

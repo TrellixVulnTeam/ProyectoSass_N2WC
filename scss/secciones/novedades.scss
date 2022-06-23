@@ -1,0 +1,11 @@
+/* DemasMains */
+
+.main2 {
+    grid-area: main2;
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: mainAparece 1s;
+}
