@@ -75,8 +75,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around; }
-  .main2 .formulario textarea {
-    resize: both; }
+    .main2 .formulario textarea {
+      resize: both; }
 
 /* DemasMains */
 .main2 {

@@ -18,8 +18,9 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        textarea {
+            resize: both;
+        }
     }
-    .formulario textarea {
-        resize: both;
-    }
+ 
 }
