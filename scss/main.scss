@@ -1,3 +1,10 @@
+
+@mixin hoverA ($fw, $txtcolor, $bgcolor) {
+    font-weight: $fw;
+    color: $txtcolor;
+    background-color: $bgcolor;
+}
+
 html {
     body {
         /* Grillas */
@@ -79,9 +86,7 @@ html {
                 }
 
                 a:hover {
-                    font-weight: 900;
-                    color: white;
-                    background-color: black;
+                    @include hoverA(900, white, black)
                 }
             }
         }
@@ -90,11 +95,6 @@ html {
 
 @import "./secciones/_index.scss";
 @import "./secciones/_contacto.scss";
-/*
-@import "./secciones/_masinfo.scss";
-@import "./secciones/_nosotros.scss";
-@import "./secciones/_novedades.scss";
-*/
 
 /* Animaciones */
 @keyframes mainAparece {

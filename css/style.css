@@ -68,7 +68,7 @@ html body {
   grid-template-areas: "item1 item2" "item3 item4";
   background-color: antiquewhite;
   animation: mainAparece 1s; }
-  .main .infoIndexItem1 {
+  .main .infoIndexItem1, .main .infoIndexItem2, .main .infoIndexItem3, .main .infoIndexItem4 {
     grid-area: item1;
     display: flex;
     align-items: center;
@@ -76,26 +76,11 @@ html body {
     align-content: space-around;
     flex-wrap: wrap; }
   .main .infoIndexItem2 {
-    grid-area: item2;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap; }
+    grid-area: item2; }
   .main .infoIndexItem3 {
-    grid-area: item3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap; }
+    grid-area: item3; }
   .main .infoIndexItem4 {
-    grid-area: item4;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap; }
+    grid-area: item4; }
 
 /* DemasMains */
 .main2 {
@@ -118,11 +103,6 @@ html body {
     .main2 .formulario textarea {
       resize: both; }
 
-/*
-@import "./secciones/_masinfo.scss";
-@import "./secciones/_nosotros.scss";
-@import "./secciones/_novedades.scss";
-*/
 /* Animaciones */
 @keyframes mainAparece {
   from {

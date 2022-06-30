@@ -25,28 +25,16 @@
 
     .infoIndexItem2 {
         grid-area: item2;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        align-content: space-around;
-        flex-wrap: wrap;
+        @extend .infoIndexItem1;
     }
 
     .infoIndexItem3 {
         grid-area: item3;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        align-content: space-around;
-        flex-wrap: wrap;
+        @extend .infoIndexItem1;
     }
 
     .infoIndexItem4 {
         grid-area: item4;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        align-content: space-around;
-        flex-wrap: wrap;
+        @extend .infoIndexItem1;
     }
 }
